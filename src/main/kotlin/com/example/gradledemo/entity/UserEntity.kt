@@ -24,5 +24,5 @@ data class UserEntity(
         @CreatedDate
         @Column(name = "create_time", nullable = false)
         var createTime: Date? = null
-):Serializable
+) : Serializable
 
