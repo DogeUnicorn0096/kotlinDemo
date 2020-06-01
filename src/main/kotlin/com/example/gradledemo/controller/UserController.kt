@@ -36,6 +36,6 @@ class UserController {
 //            else -> "login success! $user"
 //        }
         return userService.login(account, password)
-                ?.let { "login success! $it" } ?: "login fail"
+                ?.let { "login success! $it" } ?: "account or password incorrect"
     }
 }
