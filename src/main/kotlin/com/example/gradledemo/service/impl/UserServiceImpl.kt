@@ -35,12 +35,12 @@ class UserServiceImpl : UserService {
         userRepository.save(newUser)
 
 //        kafka发送消息
-        kafkaTemplate.send("user",newUser)
+        kafkaTemplate.send("user", newUser)
         return true
 
     }
 
-    override fun login(account: String, password: String):UserEntity? {
+    override fun login(account: String, password: String): UserEntity? {
         return userRepository.findUserEntityByAccountAndPassword(account, password)
     }
 }
