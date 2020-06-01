@@ -11,12 +11,13 @@ import org.springframework.kafka.support.converter.RecordMessageConverter
 import org.springframework.stereotype.Service
 import java.util.*
 import javax.annotation.Resource
+import javax.annotation.Resources
 import javax.transaction.Transactional
 
 @Transactional
 @Service
 class UserServiceImpl : UserService {
-    @Autowired
+    @Resource
     private lateinit var kafkaTemplate: KafkaTemplate<String, UserEntity>
 
     @Autowired
