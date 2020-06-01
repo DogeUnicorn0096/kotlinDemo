@@ -21,4 +21,4 @@ data class Message(@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 
                    @Column(name = "send_time")
                    @CreationTimestamp
-                   var sendTime: Timestamp? = null):Serializable
+                   var sendTime: Timestamp? = null) : Serializable
