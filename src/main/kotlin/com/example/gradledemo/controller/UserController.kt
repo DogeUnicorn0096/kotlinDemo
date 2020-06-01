@@ -1,6 +1,5 @@
 package com.example.gradledemo.controller
 
-import com.example.gradledemo.entity.UserEntity
 import com.example.gradledemo.service.UserService
 import io.swagger.annotations.Api
 import io.swagger.annotations.ApiOperation
@@ -8,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RestController
-import java.util.*
 
 @Api(value = "用户", tags = ["用户"])
 @RestController("user")
