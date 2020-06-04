@@ -1,0 +1,39 @@
+#spring:
+#  profiles: dev
+#  kafka:
+#    bootstrap-servers: 129.204.42.144:9092
+#    producer:
+#      retries: 0
+#      batch-size: 16384
+#      buffer-memory: 33554432
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      #      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: com.example.gradledemo.config.JsonSerializer
+#      acks: all
+#
+#    consumer:
+#      group-id: test
+#      auto-offset-reset: earliest
+#      enable-auto-commit: true
+#      auto-commit-interval: 100
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      #      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: com.example.gradledemo.config.JsonDeserializer
+#
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/test1
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    show-sql: true
+#    database: postgresql
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#        temp:
+#          use_jdbc_metadata_defaults: false
+#
+#
+#server:
+#  port: 9003

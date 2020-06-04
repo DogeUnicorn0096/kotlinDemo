@@ -1,0 +1,29 @@
+#spring:
+#  profiles: test
+##  h2:
+##    console:
+##      enabled: true
+##      path: /console
+##      settings:
+##        web-allow-others: true
+##        trace: false
+##  datasource:
+##    url: jdbc:h2:~/test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;
+##    driver-class-name: org.h2.Driver
+##    username: sa
+##    password:
+##    platform: h2
+##    schema:
+##      - classpath:sql/user.sql
+##    data:
+##      - classpath:sql/test1_public_user.sql
+#  jpa:
+#    show-sql: true
+#    database: h2
+#    hibernate:
+#      ddl-auto: none
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.H2Dialect
+#        temp:
+#          use_jdbc_metadata_defaults: false

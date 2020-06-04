@@ -8,7 +8,7 @@ import javax.persistence.*
 
 @Entity
 @EntityListeners(AuditingEntityListener::class)
-@Table(name = "user", schema = "public", catalog = "test1")
+@Table(name = "sys_user",schema = "flyway", catalog = "flyway")
 data class UserEntity(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Id
@@ -26,3 +26,4 @@ data class UserEntity(
         var createTime: Date? = null
 ) : Serializable
 
+//        ,schema = "public", catalog = "test1"
